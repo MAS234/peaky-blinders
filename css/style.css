@@ -1,0 +1,675 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --colorgris: rgba(40, 40, 40, 0.771);
+    --colorGrisOscuro:rgb(40, 40, 40);
+}
+
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(https://seeklogo.com/images/P/peaky-blinders-logo-610233AFED-seeklogo.com.png);
+    width: 100%;
+    background-position: center;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: white;
+    
+}
+
+.contenedorMenu{
+
+    background-color: rgb(40, 40, 40);
+    padding: 10px;
+}
+
+.menu{
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu li{
+
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li a{
+
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    
+   
+}
+
+.menu li a:hover{
+
+   box-shadow: 2px 2px 10px black;
+
+}
+
+.menu li:hover .menu_vertical{
+
+    display: block;
+}
+
+.menu li:hover .menu_shelby{
+
+    display: block;
+}
+
+.menu_vertical{
+
+    position: absolute;
+    display: none;
+    background-color: rgb(40, 40, 40);
+    width: 150px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.menu_vertical li{
+
+    margin: 3px 0;
+}
+
+.menu_vertical li a{
+
+    color: white;
+}
+
+.menu_shelby{
+
+    position: absolute;
+    display: none;
+    background-color: rgb(40, 40, 40);
+    width: 150px;
+    height: 170px;
+    margin-top: 10px;
+}
+
+.menu_shelby li{
+
+    margin: 3px 0;
+}
+
+.menu_shelby li a{
+
+    color: white;
+}
+
+.divPrincipal{
+
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(40, 40, 40);
+    height: 700px;
+}
+
+
+.texto{
+
+    border-radius: 5px;
+    padding: 10px;
+    height: 500px;
+    margin: 50px;
+    width: 500px;
+    transition: 0.5s;
+}
+
+.texto:hover{
+
+    background-color: rgba(0, 0, 0, 0.574);
+    transition: 0.5s;
+}
+
+.texto p{
+
+    color: white;
+    padding: 10px;
+}
+
+
+.mas18{
+
+    background-color: red;
+    margin-left: -10px;
+    margin-right: 330px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mas18:hover{
+
+    margin-right: 300px;
+    transition: 0.5s;
+
+}
+
+.mas18 p{
+
+    transition: 0.5s;
+}
+
+.mas18 p:hover{
+
+   margin-left: 30px;
+   transition: 0.5s;
+
+}
+
+
+.slider{
+
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gray;
+    
+}
+
+
+.slider ul{
+
+    display: flex;
+    animation: cambio 5s infinite alternate ease-in-out ;
+    width: 400%;
+    height: 300%;
+}
+
+.slider li{
+
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+
+    width: 100%;
+    height: 35%;
+}
+
+@keyframes cambio{
+
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.TituloPersonajes{
+    
+    text-align: center;
+    margin: 50px 500px;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorgris);
+}
+
+.TituloPersonajes:hover{
+    
+    background-color: rgb(40, 40, 40);
+
+}
+
+.titutoTommy{
+
+    text-align: left;
+    text-transform: uppercase;
+    background-color: var(--colorgris);
+    margin: 40px;
+    margin-left: 16px;
+    margin-right: 1150px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    transition: 0.5s;
+}
+
+.titutoTommy:hover{
+
+    background-color:rgb(40, 40, 40) ;
+    margin-right: 1100px;
+    color: red;
+    transition: 0.5s;
+}
+
+.contenedorTommy{
+
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorTommy img{
+
+    width: 500px;
+    height: 600px;
+    margin-left: -10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px gray;
+
+}
+
+.contenedorTommy img:hover{
+
+    box-shadow: 2px 2px 30px black;
+
+}
+
+.textoTommy{
+
+    width: 400px;
+    height: 460px;
+    padding: 10px;
+    box-shadow: 2px 2px 20px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 1s;
+    
+}
+
+.textoTommy:hover{
+
+    background-color: var(--colorGrisOscuro);
+    color: white;
+    transition: 1s;
+}
+
+.contenedorArthur{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 710px;
+    background-color: rgb(40, 40, 40);
+}
+
+.titutoArthur{
+
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 1150px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    background-color:var(--colorGrisOscuro);
+    transition: 0.5s;
+}
+
+.titutoArthur:hover{
+
+    margin-right: 1100px;
+    transition: 0.5s;
+}
+
+.contenedorArthur img{
+
+    box-shadow: 1px 2px 20px black;
+    border: 5px solid var(--colorGrisOscuro);
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px;
+    
+}
+
+.contenedorArthur img:hover{
+
+    box-shadow: 1px 2px 20px gray;
+}
+
+.textoArthur{
+
+    width: 400px;
+    color: white;
+    padding: 10px;
+    box-shadow: 1px 2px 20px black;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.textoArthur:hover{
+
+    box-shadow: 1px 2px 20px gray;
+}
+
+
+.titutoJhon{
+
+    text-align: left;
+    text-transform: uppercase;
+    background-color: var(--colorgris);
+    margin: 50px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 1150px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    transition: 0.5s;
+}
+
+.titutoJhon:hover{
+
+    background-color:rgb(40, 40, 40) ;
+    margin-right: 1100px;
+    color: gold;
+    transition: 0.5s;
+}
+
+.contenedorJhon{
+
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.contenedorJhon img{
+
+    width: 430px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--colorgris);
+    transition: 0.5s;
+    
+}
+
+.contenedorJhon img:hover{
+
+    background-color: var(--colorGrisOscuro);
+    transition: 0.5s;
+}
+
+.textoJhon {
+
+    width: 430px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--colorgris);
+    color: white;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.textoJhon:hover{
+
+    background-color: var(--colorGrisOscuro);
+    transition: 1s;
+}
+
+.titutopolly{
+
+    text-align: center;
+    background-color: rgba(50, 21, 77, 0.985);
+    color: white;
+    margin: 0 500px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.titutopolly:hover{
+
+    margin: 0 450px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+
+.contenedorpolly{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(50, 21, 77, 0.985) ;
+    height: 700px;
+}
+
+.contenedorpolly img{
+
+    width: 400px;
+    height: 500px;
+    margin: 50px 0;
+    border-radius: 20px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.985);
+}
+
+.contenedorpolly img:hover{
+
+    box-shadow: 2px 2px 20px gray ;
+}
+.textoPolly{
+
+    width: 400px;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0) ;
+    padding: 10px;
+
+}
+
+.textoPolly:hover{
+
+    box-shadow: 2px 2px 20px gray ;
+}
+
+.textoPolly img{
+
+    width: 60px;
+    height: 60px;
+    
+}
+
+.tituloTemporadas{
+
+    text-align: center;
+    margin: 0 500px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 100px;
+    text-transform: uppercase;
+    background-color: var(--colorgris);
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+.tituloTemporadas:hover{
+
+    background-color: var(--colorGrisOscuro);
+}
+
+.contenedorGeneralTempo{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.imagenFondo{
+
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-serie-birmingham-1-1530355256.jpg);
+    width: 100%;
+    background-position: center;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    
+}
+
+.contenedorTempo{
+
+   box-shadow: 2px 2px 20px black;
+    margin: 50px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagenTemporada img{
+
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-radius: 20px;
+
+}
+
+
+.textoTemporadas{
+
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+.textoTemporadas:hover{
+
+    background-color: gold;
+    color: black;
+}
+
+.tituloCuriosidades{
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: var(--colorGrisOscuro);
+    color: wheat;
+    margin: 0 500px;
+    border-radius: 5px;
+    margin-top: 80px;
+    
+}
+
+.ContenedorCuriosidades{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.textoCuriosidades{
+
+    margin:50px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: var(--colorgris);
+    color: wheat;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+.textoCuriosidades:hover{
+
+    background-color: var(--colorGrisOscuro);
+    transition: 1s;
+}
+
+.finalfondo{
+
+    background-color: var(--colorGrisOscuro);
+    height: 100px;
+
+}
+
+.tituloContacto{
+
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.social {
+
+margin:10px;
+display: flex;
+justify-content:space-around;
+align-items: center;
+
+
+}
+
+.social i{
+
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+#what:hover{
+
+    color: greenyellow;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#face:hover{
+
+    color:rgb(75, 129, 254);
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+#ins:hover{
+
+    color: blueviolet;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#mail:hover{
+    color: red;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
